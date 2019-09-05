@@ -100,15 +100,91 @@ var getlist_test = function (task1a_id,task2a_id,task3a_id,task4a_id,task5a_id,t
 };
 
 // enumerate the image set which is the training images
-var getlist_train = function (type,ntask,nway) {
+var getlist_train = function (type,ntask,nway,r) {
     var list = new Array();
     var dname = 'images_classif/';
-  	for (var i=1; i <= ntask; i++) {
-  		list[i-1] = new Array();
-  		for (var c=1; c <= nway; c++ ) {
-  			list[i-1][c-1] = dname + 'task' + i + type + '_train' + c + '.png';
-  		}
-  	}
+	
+    list[r[0]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[0]][c-1] = dname + 'task1a_train' + c + '.png';
+    }
+	
+    list[r[1]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[1]][c-1] = dname + 'task2a_train' + c + '.png';
+    }	
+	
+    list[r[2]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[2]][c-1] = dname + 'task3a_train' + c + '.png';
+    }	
+	
+    list[r[3]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[3]][c-1] = dname + 'task4a_train' + c + '.png';
+    }	
+	
+	
+    list[r[4]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[4]][c-1] = dname + 'task5a_train' + c + '.png';
+    }
+	
+    list[r[5]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[5]][c-1] = dname + 'task6a_train' + c + '.png';
+    }
+		
+    list[r[6]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[6]][c-1] = dname + 'task7a_train' + c + '.png';
+    }	
+	
+	
+    list[r[7]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[7]][c-1] = dname + 'task8a_train' + c + '.png';
+    }
+	
+    list[r[8]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[8]][c-1] = dname + 'task9a_train' + c + '.png';
+    }
+	
+    list[r[9]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[9]][c-1] = dname + 'task10a_train' + c + '.png';
+    }
+	
+    list[r[10]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[10]][c-1] = dname + 'task11a_train' + c + '.png';
+    }
+	
+    list[r[11]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[11]][c-1] = dname + 'task12a_train' + c + '.png';
+    }
+	
+    list[r[12]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[12]][c-1] = dname + 'task13a_train' + c + '.png';
+    }
+	
+    list[r[13]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[13]][c-1] = dname + 'task14a_train' + c + '.png';
+    }
+	
+    list[r[14]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[14]][c-1] = dname + 'task15a_train' + c + '.png';
+    }
+	
+    list[r[15]] = new Array();
+    for (var c=1; c <= nway; c++ ) {
+  	    list[r[15]][c-1] = dname + 'task16a_train' + c + '.png';
+    }
     return list;
 };
 
