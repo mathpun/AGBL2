@@ -16,6 +16,22 @@ $(document).ready(function() {
 	Q7_id = 3;
 	Q8_id = 2;
 
+	task1a_id = 3;
+	task2a_id = 2;
+	task3a_id = 4;
+	task4a_id = 3;
+	task5a_id = 4;
+	task6a_id = 1;
+	task7a_id = 2;
+	task8a_id = 1;
+	task9a_id = 4;
+	task10a_id = 2;
+	task11a_id = 1;
+	task12a_id = 3;
+	task13a_id = 3;
+	task14a_id = 1;
+	task15a_id = 2;
+	task16a_id = 4;
 
 
 	//took out line 18,19 added line 16, shit, turns out you need spec.list_condition 
@@ -27,7 +43,8 @@ $(document).ready(function() {
 	var condition = task.getCondition();
 
 	var data = {};
-	data.imglist_test = getlist_test(condition,ntask,nway);
+	//data.imglist_test = getlist_test(condition,ntask,nway);
+	data.imglist_test = getlist_test(task1a_id,task2a_id,task3a_id,task4a_id,task5a_id,task6a_id,task7a_id,task8a_id,task9a_id,task10a_id,task11a_id,task12a_id,task13a_id,task14a_id,task15a_id,task16a_id,inds);
 	data.imglist_list_train = getlist_train(condition,ntask,nway);
 	var inds = shuffle([0,1,2,3,4,5,6,7]);
 	data.imglist_demo = getlist_test_demo(Q1_id,Q2_id,Q3_id,Q4_id,Q5_id,Q6_id,Q7_id,Q8_id,inds);
