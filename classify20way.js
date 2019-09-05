@@ -75,15 +75,27 @@ function shuffle(array) {
 }
 
 // randomly choose a "test" image for each trial
-var getlist_test = function (type,ntask,nway) {
+//var getlist_test = function (type,ntask,nway) {
+var getlist_test = function (task1a_id,task2a_id,task3a_id,task4a_id,task5a_id,task6a_id,task7a_id,task8a_id,task9a_id,task10a_id,task11a_id,task12a_id,task13a_id,task14a_id,task15a_id,task16a_id,r) {
     var list = new Array();
-    var dname = 'images_classif/';
-  	var count = 0;
-  	for (var i=1; i <= ntask; i++) {
-  		var c = tu.randint(1,nway); // random choice of the image
-  		list[count] = dname + 'task' + i + type + '_test' + c + '.png';
-  		count++;
-  	}
+    var dname = 'images_classif_demo/';
+//  	list[0] = dname + 'latin_test' + latin_id + '.png';
+    list[r[0]] = dname + 'task1a_test' + task1a_id + '.png';
+    list[r[1]] = dname + 'task2a_test' + task2a_id + '.png';
+    list[r[2]] = dname + 'task3a_test' + task3a_id + '.png';
+    list[r[3]] = dname + 'task4a_test' + task4a_id + '.png';
+    list[r[4]] = dname + 'task5a_test' + task5a_id + '.png';
+    list[r[5]] = dname + 'task6a_test' + task6a_id + '.png';
+    list[r[6]] = dname + 'task7a_test' + task7a_id + '.png';
+    list[r[7]] = dname + 'task8a_test' + task8a_id + '.png';
+    list[r[8]] = dname + 'task9a_test' + task9a_id + '.png';
+    list[r[9]] = dname + 'task10a_test' + task10a_id + '.png';
+    list[r[10]] = dname + 'task11a_test' + task11a_id + '.png';
+    list[r[11]] = dname + 'task12a_test' + task12a_id + '.png';
+    list[r[12]] = dname + 'task13a_test' + task13a_id + '.png';
+    list[r[13]] = dname + 'task14a_test' + task14a_id + '.png';
+    list[r[14]] = dname + 'task15a_test' + task15a_id + '.png';
+    list[r[15]] = dname + 'task16a_test' + task16a_id + '.png';
     return list;
 };
 
