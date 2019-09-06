@@ -32,6 +32,8 @@ $(document).ready(function() {
 	task14a_id = 1;
 	task15a_id = 2;
 	task16a_id = 4;
+	
+	r = 0;
 
 
 	//took out line 18,19 added line 16, shit, turns out you need spec.list_condition 
