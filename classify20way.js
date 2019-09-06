@@ -79,7 +79,7 @@ function shuffle(array) {
 //var getlist_test = function (type,ntask,nway) {
 var getlist_test = function (task1a_id,task2a_id,task3a_id,task4a_id,task5a_id,task6a_id,task7a_id,task8a_id,task9a_id,task10a_id,task11a_id,task12a_id,task13a_id,task14a_id,task15a_id,task16a_id,r) {
     var list = new Array();
-    var dname = 'images_classif_demo/';
+    var dname = 'images_classif/';
 //  	list[0] = dname + 'latin_test' + latin_id + '.png';
     list[r[0]] = dname + 'task1a_test' + task1a_id + '.png';
     list[r[1]] = dname + 'task2a_test' + task2a_id + '.png';
