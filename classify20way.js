@@ -4,6 +4,7 @@ $(document).ready(function() {
 	// Parameters
 	var ntask = 16; // how many different tasks (alphabets) are there?
 	var nway = 4; // n-way classification tasl
+	var r = 0;
 
 	// Selected demo images
 	//latin_id = 2;
@@ -33,8 +34,6 @@ $(document).ready(function() {
 	task15a_id = 2;
 	task16a_id = 4;
 	
-	r = 0;
-
 
 	//took out line 18,19 added line 16, shit, turns out you need spec.list_condition 
 	//var spec = {};
