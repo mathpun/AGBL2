@@ -45,11 +45,12 @@ $(document).ready(function() {
 
 	var data = {};
 	//data.imglist_test = getlist_test(condition,ntask,nway);
-	var inds = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
-	data.imglist_test = getlist_test(task1a_id,task2a_id,task3a_id,task4a_id,task5a_id,task6a_id,task7a_id,task8a_id,task9a_id,task10a_id,task11a_id,task12a_id,task13a_id,task14a_id,task15a_id,task16a_id,inds);
-	data.imglist_list_train = getlist_train(condition,ntask,nway,inds);
-	data.imglist_demo = getlist_test_demo(Q1_id,Q2_id,Q3_id,Q4_id,Q5_id,Q6_id,Q7_id,Q8_id,inds);
-	data.imglist_list_demo = getlist_train_demo(nway,inds);
+	var inds_1 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+	data.imglist_test = getlist_test(task1a_id,task2a_id,task3a_id,task4a_id,task5a_id,task6a_id,task7a_id,task8a_id,task9a_id,task10a_id,task11a_id,task12a_id,task13a_id,task14a_id,task15a_id,task16a_id,inds_1);
+	data.imglist_list_train = getlist_train(condition,ntask,nway,inds_1);
+	var inds_2 = [0,1,2,3,4,5,6,7];
+	data.imglist_demo = getlist_test_demo(Q1_id,Q2_id,Q3_id,Q4_id,Q5_id,Q6_id,Q7_id,Q8_id,inds_2);
+	data.imglist_list_demo = getlist_train_demo(nway,inds_2);
 	task.load_images(data);
 	console.log("imglist_test:"+data.imglist_test);
 	console.log("imglist_train:"+data.imglist_list_train);
